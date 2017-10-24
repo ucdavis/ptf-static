@@ -1,0 +1,54 @@
+// baseline typography
+html {
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    line-height: 1.5;
+    font-family: $sans-reg;
+    @include breakpoint(tablet) {
+        font-size: 8px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 7px;
+    }
+}
+ul {
+  font-family: $sans-reg;
+  li {
+    font-size:1.6rem;
+  }
+}
+p {
+  font-size:1.6rem;
+  font-family: $sans-reg;
+  // margin:1.2rem 0rem;
+  &.lead {
+    font-size:1.8rem;
+    margin-top:0px;
+  }
+  footer & {
+    color:$tertiary-font;
+    font-size:1.4rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary-color;
+    font-family:$sans-bold;
+    // margin: 1.6rem 0rem 1rem 0rem;
+}
+h2,
+h3,
+h4 {
+  margin-top:1.5rem;
+  &.card-title {
+    margin-top:0px;
+  }
+}
+table {
+  font-size:1.6rem;
+}

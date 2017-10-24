@@ -1,0 +1,28 @@
+# Site settings
+title: Plant Transformation Facility
+email: dmtricoli@ucdavis.edu
+description: > # this means to ignore newlines until "baseurl:"
+  The Ralph M. Parsons Foundation Plant Transformation Facility was established at the University of California at Davis to provide cost effective plant transformation and plant cell biology services for the plant research community.
+subject: Plant Research
+classification: Web Design
+author:
+designer:
+replyto:
+themecolor: 002855
+repo: "https://github.com/ucdavis/ptf-static"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ptf.ucdavis.edu" # the base hostname & protocol for your site
+
+permalink: pretty
+
+paginate: 3
+
+# Build settings
+markdown: kramdown
+
+#gems
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - octopress-autoprefixer

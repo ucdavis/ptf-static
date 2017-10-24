@@ -1,0 +1,40 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+  position:relative;
+  min-height: 100%;
+  height:inherit;
+}
+body {
+  padding:0px;
+  margin:0px;
+  margin-bottom:200px;
+}
+img {
+  max-width: 100%;
+}
+
+.flex-apart {
+  display:flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  height:160px;
+  .footer-divider {
+    margin-bottom:-100px;
+    text-align:center;
+    img {
+      padding:20px;
+    }
+  }
+}

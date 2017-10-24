@@ -1,0 +1,121 @@
+
+.btn {
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 3px rgba(0,0,0,.08);
+  background: $primary-color;
+  border-radius: 2px;
+  font-size: 1.6rem;
+  letter-spacing: 0.025em;
+  color: #fff !important;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  border: none;
+  font-family: $sans-bold;
+&:active, &:focus {
+  background-color:darken($primary-color, 5);
+}
+  &:hover {
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 3px 6px rgba(0,0,0,.08);
+    background-color: lighten($primary-color, 5);
+  }
+}
+ol.breadcrumb {
+    display: inline-block;
+    list-style: none;
+    border: 0px;
+    padding-left:0px;
+    background-color:#fff;
+    li {
+        font-size: 1.2rem;
+    }
+    a {
+        color: $tertiary-font;
+        // &:hover {
+        //     color: darken($primary-color, 20%);
+        // }
+    }
+    > li {
+        display: inline-block;
+        & + li:before {
+            padding: 0 5px;
+        }
+    }
+    >.active a {
+        color: $secondary-font;
+    }
+    >li+li:before {
+        color: $tertiary-font;
+        content: "/";
+    }
+}
+.banner {
+    background-color: $secondary-color;
+    padding: 2% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+    display:flex;
+    align-items: flex-end;
+    & .banner--text {
+      h1 {
+        color:#fff;
+        display:inline;
+        border-left:8px solid $tertiary-color;
+        font-size:3rem;
+        padding:6px 18px 6px 14px;
+        margin-left:-24px;
+
+        background-color: transparentize($primary-color,.05)
+      }
+    }
+    &.banner--labgroup_banner {
+        background-image: url("/media/banners/labgroup_banner.jpg");
+    }
+    &.banner--donate_banner {
+        background-image: url("/media/banners/donate_banner.jpg");
+    }
+
+}
+.marketing-highlight {
+  .mh-title {
+    background-color:$primary-color;
+    h2 {
+      color:#fff;
+      font-size:2.6rem;
+      margin:0px;
+      padding:16px 24px;
+    }
+  }
+  .mh-content {
+    background-color:$bg-color;
+    padding:20px 24px;
+  }
+}
+.separator {
+  margin:20px 0px;
+}
+.t-right {
+  text-align:right;
+}
+.t-center {
+  text-align: center;
+}
+//database
+table.dataTable tr.odd td.sorting_1 {
+	background-color: #c0c482;
+}
+table.dataTable tr.even td.sorting_1 {
+	background-color: #edeadb;
+}
+table.dataTable tr.odd td {
+	background-color: #d0d3a9;
+}
+table.dataTable tr.even td {
+	background-color: #fcf9e9;
+}
