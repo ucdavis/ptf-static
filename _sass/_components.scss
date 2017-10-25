@@ -30,7 +30,6 @@ ol.breadcrumb {
     list-style: none;
     border: 0px;
     padding-left:0px;
-    background-color:#fff;
     li {
         font-size: 1.2rem;
     }
@@ -118,4 +117,31 @@ table.dataTable tr.odd td {
 }
 table.dataTable tr.even td {
 	background-color: #fcf9e9;
+}
+
+.card-zarra{
+  padding: 12px 32px;
+}
+
+.foot {
+  background-color: #002855;
+  padding: 16px;
+}
+.foot h1{
+  color: white;
+}
+
+.foot p{
+  color: white;
+}
+
+.even {
+  background-color: #dae4ef;
+}
+tr {
+  border: 1px solid black;
+}
+
+.lead{
+  color: #9b9b9b;
 }

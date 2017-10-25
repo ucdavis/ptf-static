@@ -14,6 +14,7 @@ body {
   padding:0px;
   margin:0px;
   margin-bottom:200px;
+  background-color: #ebebeb;
 }
 img {
   max-width: 100%;
@@ -37,4 +38,23 @@ footer {
       padding:20px;
     }
   }
+}
+
+nav {
+  background-color: #002855;
+  li {
+    border-right: solid 1px #fff;
+    padding-right: 8px;
+    position: relative;
+    display: inline;
+    padding-left: 8px;
+    font-size: 20px;
+  }
+  a{
+    color: white;
+  }
+}
+
+header{
+  background-color: white;
 }
