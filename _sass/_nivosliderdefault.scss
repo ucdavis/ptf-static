@@ -31,8 +31,8 @@ Supports Thumbs: true
 .theme-default .nivo-controlNav a {
 	display:inline-block;
 	width:22px;
-	height:30px;
-	background:url(../images/bullets.png) no-repeat;
+	height:22px;
+	background:url(/media/bullets.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin: 0 2px;
@@ -44,7 +44,7 @@ Supports Thumbs: true
 	display:block;
 	width:30px;
 	height:30px;
-	background:url(../images/arrows.png) no-repeat;
+	background:url(/media/arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	opacity: 0;
@@ -84,6 +84,7 @@ Supports Thumbs: true
     margin-right: 39%;
     position: absolute;
     z-index: 100;
+		display:none !important;;
 }
 .theme-default .nivo-caption a {
     color:#fff;
