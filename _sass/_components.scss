@@ -170,6 +170,16 @@ tr {
   }
 }
 
+.card{
+  a{
+    color: #002855;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #bb9207;
+  }
+}
+
 .splash{
   margin-bottom: 16px;
 }
