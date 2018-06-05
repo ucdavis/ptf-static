@@ -11,7 +11,7 @@ replyto:
 themecolor: 002855
 repo: "https://github.com/ucdavis/ptf-static"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ptf.ucdavis.edu" # the base hostname & protocol for your site
+url: "https://ptf.ucdavis.edu" # the base hostname & protocol for your site
 
 permalink: pretty
 
