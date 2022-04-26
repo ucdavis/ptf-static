@@ -1,11 +1,10 @@
-
 .btn {
   white-space: nowrap;
   display: inline-block;
   height: 40px;
   line-height: 40px;
   padding: 0 20px;
-  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 3px rgba(0, 0, 0, 0.08);
   background: $primary-color;
   border-radius: 2px;
   font-size: 1.6rem;
@@ -15,111 +14,112 @@
   transition: all 0.15s ease;
   border: none;
   font-family: $sans-bold;
-&:active, &:focus {
-  background-color:darken($primary-color, 5);
-}
+  &:active,
+  &:focus {
+    background-color: darken($primary-color, 5);
+  }
   &:hover {
     color: #fff !important;
     transform: translateY(-1px);
-    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 3px 6px rgba(0,0,0,.08);
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset,
+      0 3px 6px rgba(0, 0, 0, 0.08);
     background-color: lighten($primary-color, 5);
   }
 }
 ol.breadcrumb {
+  display: inline-block;
+  list-style: none;
+  border: 0px;
+  padding-left: 0px;
+  li {
+    font-size: 1.2rem;
+  }
+  a {
+    color: $tertiary-font;
+    // &:hover {
+    //     color: darken($primary-color, 20%);
+    // }
+  }
+  > li {
     display: inline-block;
-    list-style: none;
-    border: 0px;
-    padding-left:0px;
-    li {
-        font-size: 1.2rem;
+    & + li:before {
+      padding: 0 5px;
     }
-    a {
-        color: $tertiary-font;
-        // &:hover {
-        //     color: darken($primary-color, 20%);
-        // }
-    }
-    > li {
-        display: inline-block;
-        & + li:before {
-            padding: 0 5px;
-        }
-    }
-    >.active a {
-        color: $secondary-font;
-    }
-    >li+li:before {
-        color: $tertiary-font;
-        content: "/";
-    }
+  }
+  > .active a {
+    color: $secondary-font;
+  }
+  > li + li:before {
+    color: $tertiary-font;
+    content: "/";
+  }
 }
 .banner {
-    background-color: $secondary-color;
-    padding: 2% 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 270px;
-    display:flex;
-    align-items: flex-end;
-    & .banner--text {
-      h1 {
-        color:#fff;
-        display:inline;
-        border-left:8px solid $tertiary-color;
-        font-size:3rem;
-        padding:6px 18px 6px 14px;
-        margin-left:-24px;
+  background-color: $secondary-color;
+  padding: 2% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 270px;
+  display: flex;
+  align-items: flex-end;
+  & .banner--text {
+    h1 {
+      color: #fff;
+      display: inline;
+      border-left: 8px solid $tertiary-color;
+      font-size: 3rem;
+      padding: 6px 18px 6px 14px;
+      margin-left: -24px;
 
-        background-color: transparentize($primary-color,.05)
-      }
+      background-color: transparentize($primary-color, 0.05);
     }
-    &.banner--labgroup_banner {
-        background-image: url("/media/banners/labgroup_banner.jpg");
-    }
-    &.banner--donate_banner {
-        background-image: url("/media/banners/donate_banner.jpg");
-    }
-
+  }
+  &.banner--labgroup_banner {
+    background-image: url("/media/banners/labgroup_banner.jpg");
+  }
+  &.banner--donate_banner {
+    background-image: url("/media/banners/donate_banner.jpg");
+  }
 }
 .marketing-highlight {
   .mh-title {
-    background-color:$primary-color;
+    background-color: $primary-color;
     h2 {
-      color:#fff;
-      font-size:2.6rem;
-      margin:0px;
-      padding:16px 24px;
+      color: #fff;
+      font-size: 2.6rem;
+      margin: 0px;
+      padding: 16px 24px;
     }
   }
   .mh-content {
-    background-color:$bg-color;
-    padding:20px 24px;
+    background-color: $bg-color;
+    padding: 20px 24px;
   }
 }
 .separator {
-  margin:20px 0px;
+  margin: 20px 0px;
 }
 .t-right {
-  text-align:right;
+  text-align: right;
 }
 .t-center {
   text-align: center;
 }
 //database
 table.dataTable tr.odd td.sorting_1 {
-	background-color: #c0c482;
+  background-color: #c0c482;
 }
 table.dataTable tr.even td.sorting_1 {
-	background-color: #edeadb;
+  background-color: #edeadb;
 }
 table.dataTable tr.odd td {
-	background-color: #d0d3a9;
+  background-color: #d0d3a9;
 }
 table.dataTable tr.even td {
-	background-color: #fcf9e9;
+  background-color: #fcf9e9;
 }
 
-.card-zarra{
+.card-zarra {
   padding: 12px 32px;
 }
 
@@ -127,11 +127,11 @@ table.dataTable tr.even td {
   background-color: #002855;
   padding: 16px;
 }
-.foot h1{
+.foot h1 {
   color: white;
 }
 
-.foot p{
+.foot p {
   color: white;
 }
 
@@ -142,58 +142,69 @@ tr {
   border: 1px solid black;
 }
 
-.lead{
+.lead {
   color: #9b9b9b;
 }
 
-.nivoSlider{
+.nivoSlider {
   border-bottom: none;
 }
 
-.col-3{
-  a{
+.col-3 {
+  a {
     color: #002855;
     text-decoration: none;
   }
-  a:hover{
+  a:hover {
     color: #bb9207;
   }
 }
 
-.col-9{
-  a{
+.col-9 {
+  a {
     color: #002855;
     text-decoration: none;
   }
-  a:hover{
+  a:hover {
     color: #bb9207;
   }
 }
 
-.card{
-  a{
+.card {
+  a {
     color: #002855;
     text-decoration: none;
   }
-  a:hover{
+  a:hover {
     color: #bb9207;
   }
 }
 
-.splash{
+.splash {
   margin-bottom: 16px;
 }
 
-.foot-email{
-    color: white;
-    text-decoration: none;
-  }
-.foot-email:hover{
-    color: #bb9207;
-    text-decoration: none;
-
+.foot-email {
+  color: white;
+  text-decoration: none;
+}
+.foot-email:hover {
+  color: #bb9207;
+  text-decoration: none;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   color: #bb9207;
+}
+.alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
 }
