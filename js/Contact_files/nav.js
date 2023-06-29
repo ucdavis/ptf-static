@@ -132,7 +132,7 @@ Header
     <h1>The Ralph M. Parsons Foundation</h1>
     <p>Plant Transformation Facility <br>University of California<br>One Shields Ave, Davis, CA 95616</p>
     <p>All contents copyright © 2013</p>
-    <p>please e-mail your comments to: <a class="email-link" href="mailto:jmdebernardi@ucdavis.edu" target="_self" title="">jmdebernardi@ucdavis.edu</a></p>
+    <p>please e-mail your comments to: <a class="email-link" href="mailto:jmdebernardi@ucdavis.edu" target="_self" title="">Juan M Debernardi</a></p>
   </div>
 </footer>
 
